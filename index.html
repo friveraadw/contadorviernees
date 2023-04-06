@@ -71,7 +71,7 @@
 		var seconds = document.getElementById("seconds");
 		var milliseconds = document.getElementById("milliseconds");
 
-		var endDate = new Date("APR 15, 2023 23:59:59:00 GMT -0300").getTime();
+		var endDate = new Date("APR 06, 2023 17:00:00:00 GMT -0300").getTime();
 
 		var timer = setInterval(function() {
 			var now = new Date().getTime();
@@ -85,7 +85,7 @@
 			hours.innerHTML = ("0" + hoursLeft).slice(-2);
 			minutes.innerHTML = ("0" + minutesLeft).slice(-2);
 			seconds.innerHTML = ("0" + secondsLeft).slice(-2);
-			milliseconds.innerHTML = ("00" + millisecondsLeft).slice(-4);
+			milliseconds.innerHTML = ("00" + millisecondsLeft).slice(-2);
 
 			if (timeLeft < 0) {
 				clearInterval(timer);
